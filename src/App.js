@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -10,7 +10,7 @@ import Footer from "./components/Footer"
 function App() {
 return(
 
-    <div className="container">
+    <BrowserRouter>
         <Nav/>
         <Routes>
             <Route path="/" element={<Home/>}/>
@@ -20,7 +20,7 @@ return(
            
         </Routes>
        <Footer/>
-    </div>
+    </BrowserRouter>
 );
 }
 
