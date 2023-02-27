@@ -15,7 +15,7 @@ return(
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/instructors" element={<Instructors/>}/>
-            <Route path="contact" element={<Contact/>}/>
+            <Route path="/contact" element={<Contact/>}/>
             <Route path="*" element={<NotFound/>}/>
            
         </Routes>
